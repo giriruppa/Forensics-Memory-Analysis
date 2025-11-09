@@ -116,7 +116,7 @@ Here it import the createDecrypter from section.text
 
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/e5a1c9a0-3f54-4c37-b028-e919fe86d4ba" />
 
-When the application jumps to corExeMain – it uses the mcscore.dll 
+- When the application jumps to corExeMain – it uses the mcscore.dll 
 
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/33b67672-3c47-4314-ba8a-49307b17829d" />
 
@@ -142,3 +142,52 @@ Eg : thread , get_Data etc..
 
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/652de504-ace3-47e7-8436-249b197361ee" />
 
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/beae2c55-10b6-4666-abf7-ebb686f5999c" />
+
+- Register entries and tag 
+
+<img width="1021" height="574" alt="image" src="https://github.com/user-attachments/assets/ed9563cd-997b-4d56-a60a-5779d85bee0e" />
+
+- Here the signatures of the file vcseh,org and library name is SEH for vc7-14
+
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/8d60cb1c-dce2-42ae-85ec-636af91c45fd" />
+
+- Library – mssdk_win7 ------ MS SDK ( windows 7)
+
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/7b247aab-948f-4d6b-9e73-fd6e988a6f70" />
+
+- Hidden reference – image base --  work flow
+
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/4eec1e90-b2ca-4373-ab6b-376f91b27a45" />
+
+- Graph of the application and it contains the hidden reference i.e in the + icon
+
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/2b2a553c-30e0-4c72-acc9-71d579d79839" />
+
+- After view the hidden reference its shows the exact graph of workflow of the hidden(image base) malware
+
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/f1f29771-27a5-429a-87dd-019080df9eb7" />
+
+- In above red icon displays the image base of hidden of the header
+
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/8d1faf92-535e-4708-88a6-7717d461a037" />
+
+- In threads 7792 – malware .exe
+
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/a798283c-b72c-48ba-8828-bac0c0e814d4" />
+
+- In below we can see some dll are loaded during the debugging process eg. Win32.dll, user32.dll.., etc
+
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/5b2aacfd-c4b9-4b32-a5f3-fd4fcb27783f" />
+
+- Imp things that it loads the PDB from wkernelbase  etc,,
+
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/6bbe6e08-44ba-4c33-8015-1efc6ed262b5" />
+
+- In stack view it loads kerenelbase.dll and raiseException+62
+
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/0948fe49-8c8a-4dc1-a569-e77d8dd31437" />
+
+- ntdll.dll is a crucial Windows system file that contains the Native API, which is the low-level interface between user-mode programs and the Windows kernel. It is used to provide core functions for the operating system and is essential for the proper operation of most programs. Since it is a core system file, it should never be deleted or modified by users
+
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/1e75649e-ecd3-4213-9cb9-dba5b36f6a37" />
