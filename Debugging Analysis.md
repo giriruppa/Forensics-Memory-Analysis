@@ -1,4 +1,4 @@
-### Tool Used : Pe Studio
+### Tool Used : 1) Pe Studio
 #### Sample name: Nyetnpntg.exe
 - **SHA-256:** 3c0ae906bacae796e85d02b2b054f85e38b3d3c4ac502f26f39fea04b7061b4e
 - **File size:** 12,288 bytes
@@ -72,14 +72,14 @@ Here it import the createDecrypter from section.text
 
 #### Indicators of compromise (IOCs)
 
-**VirusTotal Scan Date:** 2025-09-11
-**SHA-256:**  3c0ae906bacae796e85d02b2b054f85e38b3d3c4ac502f26f39fea04b7061b4e
-**Filename:** Nyetnpntg.exe (internal name: MyApplication.app)
-**Assembly GUID:** FFA197DB-3FB1-4157-B87D-CDD2B02FE194
-**ImpHash:** F34D5F2D4577ED6D9CEEC516C1F5A744
-**Suspicious URL:** http://100@.filemail.com/api/file/get?filekey=5QpRtrYzR1zQcW9BFuZRa
-**Notable strings / functions:** CreateDecryptor, MemoryStream, HttpClient, createDecrypter (in .text)
-**Malicious Functions Identified:** CreateDecryptor, MemoryStream — suggest encryption/decryption behavior
+- **VirusTotal Scan Date:** 2025-09-11
+- **SHA-256:**  3c0ae906bacae796e85d02b2b054f85e38b3d3c4ac502f26f39fea04b7061b4e
+- **Filename:** Nyetnpntg.exe (internal name: MyApplication.app)
+- **Assembly GUID:** FFA197DB-3FB1-4157-B87D-CDD2B02FE194
+- **ImpHash:** F34D5F2D4577ED6D9CEEC516C1F5A744
+- **Suspicious URL:** http://100@.filemail.com/api/file/get?filekey=5QpRtrYzR1zQcW9BFuZRa
+- **Notable strings / functions:** CreateDecryptor, MemoryStream, HttpClient, createDecrypter (in .text)
+- **Malicious Functions Identified:** CreateDecryptor, MemoryStream — suggest encryption/decryption behavior
 
 ### Tool Used : Task Manager
 
@@ -90,7 +90,23 @@ Here it import the createDecrypter from section.text
 
 ---
 
-### Tool Used : IDA PRO 
+### Tool Used : 2) IDA PRO 
+
+- **Analysis tool:** IDA Pro (Interactive Disassembler) — Freeware 2024.
+- **Hex-Rays plugin:** Hex-Rays Decompiler present.
+- **DOS stub:** Contains standard message "This program cannot be run in DOS mode."
+- **Input SHA-256 (as provided earlier):** 3C0AE906BACAE796E85D02B2B054F85E38B3D3C4AC502F26F39FEA04B7061B4E.
+- **Input MD5 (as provided earlier):** 9BCF47D41E86103E280FCBE279C46B21.
+- **Input CRC32:** 65626155.
+- **Guessed compiler/tooling:** Visual C++ (guessed).
+- **PE architecture/model:** 32-bit, flat model.
+- **Segment type:** DATA segment present (pure data).
+- **IDA views used:** Hex view, Stack view, Registers (EIP/EAX/ECX/EDX/ESI shown).
+- **Threads observed (TIDs):** 7792, 3620, 2676 (thread names/handles like 775A5970).
+- **Debugger event:** unknown exception code 4242420 (anti-analysis / custom exception).
+- **PDB behavior:** IDA attempted PDB download from Microsoft symbol server (msdl.microsoft.com) using PDBIDA provider.
+- **PDB local cache path:** user temp path used (e.g., C:\Users\FlareVM\AppData\Local\Temp\ida\...).
+- **ImageBase referenced / synced in views:** ImageBase synchronization noted (0x400000)
 
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/26de12db-b5aa-487b-b156-678344b1e304" />
 
@@ -98,21 +114,6 @@ Here it import the createDecrypter from section.text
 
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/44f9d903-ccde-4296-a390-c2ee8b3f5629" />
 
-**Analysis tool:** IDA Pro (Interactive Disassembler) — Freeware 2024.
-**Hex-Rays plugin:** Hex-Rays Decompiler present.
-**DOS stub:** Contains standard message "This program cannot be run in DOS mode."
-**Input SHA-256 (as provided earlier):** 3C0AE906BACAE796E85D02B2B054F85E38B3D3C4AC502F26F39FEA04B7061B4E.
-**Input MD5 (as provided earlier):** 9BCF47D41E86103E280FCBE279C46B21.
-**Input CRC32:** 65626155.
-**Guessed compiler/tooling:** Visual C++ (guessed).
-**PE architecture/model:** 32-bit, flat model.
-**Segment type:** DATA segment present (pure data).
-**IDA views used:** Hex view, Stack view, Registers (EIP/EAX/ECX/EDX/ESI shown).
-**Threads observed (TIDs):** 7792, 3620, 2676 (thread names/handles like 775A5970).
-**Debugger event:** unknown exception code 4242420 (anti-analysis / custom exception).
-**PDB behavior:** IDA attempted PDB download from Microsoft symbol server (msdl.microsoft.com) using PDBIDA provider.
-**PDB local cache path:** user temp path used (e.g., C:\Users\FlareVM\AppData\Local\Temp\ida\...).
-**ImageBase referenced / synced in views:** ImageBase synchronization noted (0x400000)
 
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/e5a1c9a0-3f54-4c37-b028-e919fe86d4ba" />
 
