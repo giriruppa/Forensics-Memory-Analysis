@@ -2,7 +2,11 @@
 
 ⚠️Safety & Legal Notice This repository contains analysis artifacts for a malicious sample. Do not execute the sample on your host. Use an isolated, fully patched analysis VM (e.g., FLARE VM), with no network or with controlled FakeNet/FakeDNS. This content is for educational/research use only.
 
+📘 *Click here to open the complete high-quality version.*  
+👉 [**View Full Malware Analysis Report**](https://docs.google.com/document/d/13qJ6CIYqLJqnK3VyDQs3uyEQc2F5cLML/edit?usp=drive_link&ouid=105120231126763095882&rtpof=true&sd=true)
+
 Memory forensics, network artifacts, process &amp; DLL analysis (Volatility3 + FTK), reverse engineering with IDA Pro. Report + tools + sanitized artifacts.
+
 
 ### Executive summary
 
